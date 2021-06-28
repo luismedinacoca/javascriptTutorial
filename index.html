@@ -10,6 +10,8 @@
     <h1>Fundamentos Javascript</h1>
 
     <script>
+        /** 
+        //Lecture003
         var hola = "Hola Mundo";
         console.log(hola)
         let hello = "hello World"
@@ -17,7 +19,7 @@
         console.log(window);
         //window.var exist but window.hello
 
-        /** best practice: avoid using var to declarate variable */
+        // best practice: avoid using var to declarate variable
         console.log("******************** VAR ********************")
         var music = "Rock";
         console.log("music variable value before block: ", music);
@@ -37,7 +39,57 @@
             console.log("music variable value INSIDE the block: ", music2)
         }
         console.log("music variable value after the block: ", music2)
+        */
 
+        ///**
+        //Lecture004
+        let a;  //it allows to declare a let variable without initialization
+        const PI = 3.14159;
+        //const NUEVE; //Uncaught SyntaxError: Missing initializer in const declaration
+        console.log(PI);
+        //PI = 3.15; //Uncaught TypeError: Assignment to constant variable
+        a = "Kenai";
+        console.log(a);
+
+        console.log("******************** LET ********************")
+        let object = {
+            name: "German",
+            age: 44
+        }
+        let colours = ["white", "black", "blue"]
+        console.log(object)
+        console.log(colours)
+
+        //modify this variables:
+        object.email = "German_example@rgent.ar"
+        colours.push("orange")
+
+        //print again the variables:
+        console.log(object)
+        console.log(colours) //there is NOT error
+
+        console.log("******************** CONST ********************")
+        const objeto = {
+            nombre: "Miguel",
+            edad: 35
+        }
+
+        const colores = ["blanco", "negro", "azul"]
+
+        console.log(objeto)
+        console.log(colores)
+
+        //adding new values:
+        objeto.correo = "miguel_example@rgent.ar"
+        colores.push("naranja");
+
+        //print again the modified variables
+        console.log(objeto)
+        console.log(colores)
+
+        //const variables with complex data makes a references to the object NOT its values inside
+
+        //*/
 ;    </script>
 </body>
 </html>
