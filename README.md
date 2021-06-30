@@ -1,7 +1,16 @@
-Lecture004 - constant - CONST
+Lecture005 - cadena de text (String)
 ====================================
-Link: https://www.youtube.com/watch?v=PIHZRj99nHU&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=5
-const with primitive variables => primite values DON'T change
+Link: https://youtu.be/s-C8OpALC6E?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA
 
-const with complex variable => their reference don't change but their value inside
+visit: https://developer.mozilla.org/es/
 
+"In javascript, everything is an object"
+
+String
+- property: length
+- methods:
+    * toUpperCase()
+    * to LowerCase()
+    * includes('string')
+    * trim()
+    * split("rule")

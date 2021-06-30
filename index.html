@@ -10,86 +10,50 @@
     <h1>Fundamentos Javascript</h1>
 
     <script>
-        /** 
-        //Lecture003
-        var hola = "Hola Mundo";
-        console.log(hola)
-        let hello = "hello World"
-        console.log(hello);
-        console.log(window);
-        //window.var exist but window.hello
+        //strings
 
-        // best practice: avoid using var to declarate variable
-        console.log("******************** VAR ********************")
-        var music = "Rock";
-        console.log("music variable value before block: ", music);
-        {
-            //inside block
-            var music = "Pop";
-            console.log("music variable value INSIDE the block: ", music)
-        }
-        console.log("music variable value after the block: ", music)
+        let name = "Luis";
+        let lastname = "Medina";
 
-        console.log("******************** LET ********************")
-        let music2 = "Rock";
-        console.log("music variable value before block: ", music2);
-        {
-            //inside block
-            let music2 = "Pop";
-            console.log("music variable value INSIDE the block: ", music2)
-        }
-        console.log("music variable value after the block: ", music2)
-        */
+        let greetings = new String("Hello World");  //quite formal
+        let lorem = "   Lorem iPSum, doLOr sit amet conSECTetur adIPIsicing elit. Est, eT DOLOrum.Adipisci sequi, voluptates accusamus earum mafnam non pariatur odit consequuntur dicta modi. Quan soluta aliquid nam ea quod dolore.    "
 
-        ///**
-        //Lecture004
-        let a;  //it allows to declare a let variable without initialization
-        const PI = 3.14159;
-        //const NUEVE; //Uncaught SyntaxError: Missing initializer in const declaration
-        console.log(PI);
-        //PI = 3.15; //Uncaught TypeError: Assignment to constant variable
-        a = "Kenai";
-        console.log(a);
+        console.log(name);
+        //property
+        console.log(name.length);
+        //method()
+        console.log(name.toUpperCase())        
+        console.log(name.toLowerCase())
 
-        console.log("******************** LET ********************")
-        let object = {
-            name: "German",
-            age: 44
-        }
-        let colours = ["white", "black", "blue"]
-        console.log(object)
-        console.log(colours)
+        console.log(" ")
+        console.log(lastname);
+        //property
+        console.log(lastname.length);
+        //method()
+        console.log(lastname.toUpperCase())    
+        console.log(lastname.toLowerCase())
 
-        //modify this variables:
-        object.email = "German_example@rgent.ar"
-        colours.push("orange")
 
-        //print again the variables:
-        console.log(object)
-        console.log(colours) //there is NOT error
+        console.log(" ")
+        console.log(greetings)
+        //property
+        console.log(greetings.length);
+        //method()
+        console.log(greetings.toUpperCase())    
+        console.log(greetings.toLowerCase())
 
-        console.log("******************** CONST ********************")
-        const objeto = {
-            nombre: "Miguel",
-            edad: 35
-        }
-
-        const colores = ["blanco", "negro", "azul"]
-
-        console.log(objeto)
-        console.log(colores)
-
-        //adding new values:
-        objeto.correo = "miguel_example@rgent.ar"
-        colores.push("naranja");
-
-        //print again the modified variables
-        console.log(objeto)
-        console.log(colores)
-
-        //const variables with complex data makes a references to the object NOT its values inside
-
-        //*/
+        console.log(" ")
+        console.log(lorem)
+        //property
+        console.log(lorem.length)
+        //method        
+        console.log(lorem.toUpperCase())    
+        console.log(lorem.toLowerCase())
+        console.log(lorem.includes('Isicin'))  //boolean
+        console.log(lorem.includes('Luis'))  //boolean
+        console.log(lorem.trim())
+        console.log(lorem.split(" "))  //generate an array: property of split("space")
+        console.log(lorem.split(", "))  //generate an array: property of split("colum")
 ;    </script>
 </body>
 </html>
