@@ -9,51 +9,50 @@
 <body>
     <h1>Fundamentos Javascript</h1>
 
+    <ul>
+        <li>Spring</li>
+        <li>Summer</li>
+        <li>autumn</li>
+        <li>winter</li>
+    </ul>
+
     <script>
-        //strings
+        //Template String
 
         let name = "Luis";
         let lastname = "Medina";
+        //1. concatenate: space after the sentences and a space between two variables:
+        //let greeting = "hi, my names is"+name+lastname
+        let greeting = "Hi, my name is " + name + " " + lastname
+        console.log(greeting);
 
-        let greetings = new String("Hello World");  //quite formal
-        let lorem = "   Lorem iPSum, doLOr sit amet conSECTetur adIPIsicing elit. Est, eT DOLOrum.Adipisci sequi, voluptates accusamus earum mafnam non pariatur odit consequuntur dicta modi. Quan soluta aliquid nam ea quod dolore.    "
-        
-        console.log(name);
-        //property
-        console.log(name.length);
-        //method()
-        console.log(name.toUpperCase())        
-        console.log(name.toLowerCase())
+        //variable interpolation - template string:
+        let greeting2 = `Hello, my name is ${name} ${lastname}.`;
+        console.log(greeting2);
 
-        console.log(" ")
-        console.log(lastname);
-        //property
-        console.log(lastname.length);
-        //method()
-        console.log(lastname.toUpperCase())    
-        console.log(lastname.toLowerCase())
+        let ul = "<ul>\n\t<li>Spring</li>\n\t<li>Summer</li>\n\t<li>autumn</li>\n\t<li>winter</li>\n</ul>";
+        console.log("ul: from thml with double quotes");
+        console.log(ul);
+        //backticks ALT + 96 
+        let ul2 = `
+        <ul>
+            <li>Spring</li>
+            <li>Summer</li>
+            <li>autumn</li>
+            <li>winter</li>
+        </ul>`;
+        console.log("ul: from hml with backtiks");
+        console.log(ul2);
 
-
-        console.log(" ")
-        console.log(greetings)
-        //property
-        console.log(greetings.length);
-        //method()
-        console.log(greetings.toUpperCase())    
-        console.log(greetings.toLowerCase())
-
-        console.log(" ")
-        console.log(lorem)
-        //property
-        console.log(lorem.length)
-        //method        
-        console.log(lorem.toUpperCase())    
-        console.log(lorem.toLowerCase())
-        console.log(lorem.includes('Isicin'))  //boolean
-        console.log(lorem.includes('Luis'))  //boolean
-        console.log(lorem.trim())
-        console.log(lorem.split(" "))  //generate an array: property of split("space")
-        console.log(lorem.split(", "))  //generate an array: property of split("colum")
+        //another way with addition:
+        let ul3 = "<ul>";
+            ul3 += "<li>Spring</li>";
+            ul3 += "<li>Summer</li>";
+            ul3 += "<li>autumn</li>";
+            ul3 += "<li>winter</li>";
+            ul3 += "</ul>";
+        console.log("ul3 with complex addition:")    
+        console.log(ul3);    
 ;    </script>
 </body>
 </html>
