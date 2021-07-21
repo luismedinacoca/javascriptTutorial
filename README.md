@@ -1,14 +1,33 @@
-Lecture007 - Numbers
-====================
-Link: https://www.youtube.com/watch?v=o4p6p1z2P5A&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=8
+# Lecture008 - Boolean
 
-1. constructor: 
-    1.1 let variableName = new Number(numberValue);
-        i.e.  let a = new Number(2);
-2. methods:
-    2.1 variableNumber.toFixed(number)  //number of decimal
-    2.2 parseInt(variableNumber)  // convert to integer
-    2.3 typeof variableNumber //shows the type of value
-    2.4 parseFloat(variableNumber)  //convert to float
-        Number.parseFloat(variableNumber)
-        
+[Link](https://www.youtube.com/watch?v=Csu9tRuuX0M&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=9)
+
+1.fast way:
+    i. let trueVar = true;
+    ii. let falseVar = false;
+2. constructor:
+    i. let booleanVar1 = Boolean(true);
+    ii. let booleanVar2 = Boolean(false);
+3. Truthy:
+    i. Boolean(true)
+    ii.Boolean({})
+    iii. Boolean([])
+    iv. Boolean(45)
+    v.  Boolean("foo")
+    vi. Boolean(new Date())
+    vii. Boolean(-42)
+    viii. Boolean(3.14159)
+    ix. Boolean(-3.14159)
+    x. Boolean(Infinity)
+    xi. Boolean(-Infinity)
+4. Falsy:
+    i. Boolean(false)
+    ii. Boolean(null)
+    iii. Boolean(undefined)
+    iv. Boolean(0)
+    v. Boolean(NaN)
+    vi. Boolean("")
+    vii. Boolean('')
+    viii. Boolean(document.all)
+    
+:ok_hand:

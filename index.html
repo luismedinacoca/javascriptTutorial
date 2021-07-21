@@ -17,56 +17,43 @@
     </ul>
 
     <script>
-        //Numbers
-        console.log("let a = 2;")
-        let a = 2;
-        // constructor:
-        console.log("let b = new Number(1);")
-        let b = new Number(1);
+        //Boolean
+        let verdadero = true;
+        let falso = false;
+        let v = Boolean(true);
 
-        //display in console:
-        console.log("console.log(a, b)");
-        console.log(a, b);
+        console.log(falso, typeof falso);
+        console.log(verdadero, typeof verdadero);
         console.log(" ");
 
-        let c = 7.19;
-        console.log("let c = 7.19");
-        console.log(c); //7.19
-        //round-up:
-        console.log("console.log(c.toFixed(1))");
-        console.log(c.toFixed(1)); //7.2
-        console.log("console.log(c.toFixed(5))")
-        console.log(c.toFixed(5)); //7.19000
-        console.log("console.log(parseInt(c))")
-        console.log(parseInt(c)); //displays integer only
-        console.log(typeof c); //number
-
-        let d = "5.6"
-        console.log("let d = \"5.6\"");
-        console.log(d);
-        console.log("console.log(typeof d);");
-        console.log(typeof d);
-
+        console.log(v);
+        console.log(typeof v);
         console.log(" ");
-        console.log("a + b");
-        console.log(a + b); //3
+
+        console.log("Truthy:");
+        console.log("Boolean(true) = ", Boolean(true));
+        console.log("Boolean({}) = ", Boolean({}));
+        console.log("Boolean([]) = ", Boolean([]));
+        console.log("Boolean(45) = ", Boolean(45));
+        console.log("Boolean(\"foo\") = ", Boolean("foo"));
+        console.log("Boolean(new Date()) = ", Boolean(new Date()));
+        console.log("Boolean(-42) = ", Boolean(-42));
+        console.log("Boolean(3.14159) = ", Boolean(3.14159));
+        console.log("Boolean(-3.14159) = ", Boolean(-3.14159));
+        console.log("Boolean(Infinity) = ", Boolean(Infinity));
+        console.log("Boolean(-Infinity) = ", Boolean(-Infinity));
+        console.log(" ");
+
+        console.log("Falsy:");
+        console.log("Boolean(false) = ", Boolean(false));
+        console.log("Boolean(null) = ", Boolean(null));
+        console.log("Boolean(undefine) = ", Boolean(undefined));
+        console.log("Boolean(0) = ", Boolean(0));
+        console.log("Boolean(NaN) = ", Boolean(NaN));
+        console.log("Boolean(\"\") = ", Boolean(""));
+        console.log("Boolean('') = ", Boolean(''));
+        console.log("Boolean(document.all) = ", Boolean(document.all));
         
-        console.log(" ");
-        console.log("c + d");
-        console.log(c + d); //7.195.6  => concatenate
-        console.log(" ");
-
-        console.log("c + parseInt(d)")
-        console.log(c + parseInt(d)) //12.19000000000001
-        console.log(" ");
-
-        console.log("c + parseFloat(d)");
-        console.log(c + parseFloat(d)); //12.79
-
-        console.log("");
-        console.log("console.log(c + Number.parseInt(d));");
-        console.log(c + Number.parseInt(d));
-         
     </script>
 </body>
 </html>
