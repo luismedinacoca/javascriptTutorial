@@ -2,7 +2,7 @@
 
 [Link](https://www.youtube.com/watch?v=Csu9tRuuX0M&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=9)
 
-1.fast way:
+1. fast way:
     i. let trueVar = true;
     ii. let falseVar = false;
 2. constructor:
@@ -29,5 +29,5 @@
     vi. Boolean("")
     vii. Boolean('')
     viii. Boolean(document.all)
-    
+
 :ok_hand:
