@@ -2,32 +2,32 @@
 
 [Link](https://www.youtube.com/watch?v=Csu9tRuuX0M&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=9)
 
-1. fast way:
-    i. let trueVar = true;
-    ii. let falseVar = false;
-2. constructor:
-    i. let booleanVar1 = Boolean(true);
-    ii. let booleanVar2 = Boolean(false);
-3. Truthy:
-    i. Boolean(true)
-    ii.Boolean({})
-    iii. Boolean([])
-    iv. Boolean(45)
-    v.  Boolean("foo")
-    vi. Boolean(new Date())
-    vii. Boolean(-42)
-    viii. Boolean(3.14159)
-    ix. Boolean(-3.14159)
-    x. Boolean(Infinity)
-    xi. Boolean(-Infinity)
-4. Falsy:
-    i. Boolean(false)
-    ii. Boolean(null)
-    iii. Boolean(undefined)
-    iv. Boolean(0)
-    v. Boolean(NaN)
-    vi. Boolean("")
-    vii. Boolean('')
-    viii. Boolean(document.all)
+* fast way:
+      * let trueVar = true;
+      * let falseVar = false;
+* constructor:
+     * let booleanVar1 = Boolean(true);
+     * let booleanVar2 = Boolean(false);
+* Truthy:
+     * Boolean(true)
+     * Boolean({})
+     * Boolean([])
+     * Boolean(45)
+     * Boolean("foo")
+     * Boolean(new Date())
+     * Boolean(-42)
+     * Boolean(3.14159)
+     * Boolean(-3.14159)
+     * Boolean(Infinity)
+     * Boolean(-Infinity)
+* Falsy:
+     * Boolean(false)
+     * Boolean(null)
+     * Boolean(undefined)
+     * Boolean(0)
+     * Boolean(NaN)
+     * Boolean("")
+     * Boolean('')
+     * Boolean(document.all)
 
 :ok_hand:
