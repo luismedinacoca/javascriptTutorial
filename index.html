@@ -4,55 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundamentos JavaScript - project01</title>
+    <title>Fundamentos JavaScript - Class 09 - undefined, null & NaN</title>
 </head>
 <body>
     <h1>Fundamentos Javascript</h1>
+    <br>
+    <h2>Class 09 - undefined, null & NaN</h2>
 
-    <ul>
-        <li>Spring</li>
-        <li>Summer</li>
-        <li>autumn</li>
-        <li>winter</li>
-    </ul>
 
     <script>
-        //Boolean
-        let verdadero = true;
-        let falso = false;
-        let v = Boolean(true);
+        //Class 09 - undefined, null & NaN
+        let indefinida; //undefined  <=== this value is assign by javascript
+        let nulo = null; // <=== this value is assigned by the programmer
+        let isNotNumber = "hola" * 3.1415;
 
-        console.log(falso, typeof falso);
-        console.log(verdadero, typeof verdadero);
-        console.log(" ");
 
-        console.log(v);
-        console.log(typeof v);
-        console.log(" ");
+        console.log("indefinida: ", indefinida, "<< assigned by javascript");
+        console.log("nulo: ", nulo, "<< assigned by programmer");
+        console.log("isNotNumber:", "\"hola\" * 3.1415", isNotNumber)
 
-        console.log("Truthy:");
-        console.log("Boolean(true) = ", Boolean(true));
-        console.log("Boolean({}) = ", Boolean({}));
-        console.log("Boolean([]) = ", Boolean([]));
-        console.log("Boolean(45) = ", Boolean(45));
-        console.log("Boolean(\"foo\") = ", Boolean("foo"));
-        console.log("Boolean(new Date()) = ", Boolean(new Date()));
-        console.log("Boolean(-42) = ", Boolean(-42));
-        console.log("Boolean(3.14159) = ", Boolean(3.14159));
-        console.log("Boolean(-3.14159) = ", Boolean(-3.14159));
-        console.log("Boolean(Infinity) = ", Boolean(Infinity));
-        console.log("Boolean(-Infinity) = ", Boolean(-Infinity));
-        console.log(" ");
-
-        console.log("Falsy:");
-        console.log("Boolean(false) = ", Boolean(false));
-        console.log("Boolean(null) = ", Boolean(null));
-        console.log("Boolean(undefine) = ", Boolean(undefined));
-        console.log("Boolean(0) = ", Boolean(0));
-        console.log("Boolean(NaN) = ", Boolean(NaN));
-        console.log("Boolean(\"\") = ", Boolean(""));
-        console.log("Boolean('') = ", Boolean(''));
-        console.log("Boolean(document.all) = ", Boolean(document.all));
         
     </script>
 </body>
