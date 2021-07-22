@@ -1,10 +1,11 @@
-# Lecture009 - Undefiuned, Null, NaN
+# Lecture010 - Functions
+[JavaScript-Class10](https://www.youtube.com/watch?v=H6U1Pm7x60E&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=11)
 
-[JavaScript-Class09](https://www.youtube.com/watch?v=dux1Uv2eLfw&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=10)
-
-1. Undefined
-     1. value assigned by javascript
-1. Null
-     1. value assigned by programmer
-1. NaN
-     1. operation with numbers and other types.
+1. functions
+     1. definition
+1. function types:
+     1. simple function
+     1. return a value
+     1. with parameters
+     1. declarated functions
+     1. expressed functions

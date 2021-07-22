@@ -9,20 +9,82 @@
 <body>
     <h1>Fundamentos Javascript</h1>
     <br>
-    <h2>Class 09 - undefined, null & NaN</h2>
+    <h2>Class 10 - Funciones</h2>
 
 
     <script>
-        //Class 09 - undefined, null & NaN
-        let indefinida; //undefined  <=== this value is assign by javascript
-        let nulo = null; // <=== this value is assigned by the programmer
-        let isNotNumber = "hola" * 3.1415;
+        //Class 10 - Funciones
+
+        /*
+        functions is a enclosed block of code.
+        you can defined once and it can be executed many times.
+
+        a function can accept parameters and return a value
+
+        a javascript function is a special object type.
+
+        a function is a first class citizen  cause it can be assigned to a value
+        it can be send as an argument or a return value.
+        */
 
 
-        console.log("indefinida: ", indefinida, "<< assigned by javascript");
-        console.log("nulo: ", nulo, "<< assigned by programmer");
-        console.log("isNotNumber:", "\"hola\" * 3.1415", isNotNumber)
+        //declarated function
+        function thisIsAFunction(){
+            console.log("One");
+            console.log("Two");
+        }
 
+        function aFunctionWhichReturnAValue(){
+            console.log("three");
+            return false;
+            //ignored section:
+            console.log("four");
+            return "this function returns a string"
+        }
+
+        function greeting(name="Unknown", age=0){
+            console.log(`Hello, my name is ${name} and I'm ${age} years old`);
+            //name= Unknown to avoid the undefined value as well as 0 for age.
+        }
+
+        //calling a function twice:
+        thisIsAFunction();
+        thisIsAFunction();
+
+        //calling a function which return a value:
+        let functionValue = aFunctionWhichReturnAValue();
+        console.log("function Value: ", functionValue)
+
+        //calling a function with parameters:
+        console.log("greeting('Virginia', 32);");
+        greeting('Virginia', 32);
+        console.log("greeting()");
+        greeting();
+
+
+        /*Declarated Functions vs Expressed Functions */
+
+        //DECLARATED FUNCTIONS:
+        console.log("DECLARATED FUNCTIONS:")
+        declaratedFunction();
+
+        function declaratedFunction(){
+            console.log("This is a declarated function and you can calling even before it is declared");
+        }
+
+        declaratedFunction();
+
+
+        //EXPRESSED FUNCTIONS:
+        console.log("EXPRESSED FUNCTIONS:")
+        //uncomment the following expressedFunction()
+        //expressedFunction();
+        const expressedFunction = function(){
+            console.log("This is a expressed function which it is assigned to a variable");
+            console.log("If we call this expressed function before its declaration, we will get an error...");
+            console.log("** Uncaught ReferenceError: Cannot access 'expressedFunction' before initialization **");
+        }
+        expressedFunction();
         
     </script>
 </body>
