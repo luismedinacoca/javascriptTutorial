@@ -9,83 +9,53 @@
 <body>
     <h1>Fundamentos Javascript</h1>
     <br>
-    <h2>Class 10 - Funciones</h2>
+    <h2>Class 11 - Arrays</h2>
 
 
     <script>
-        //Class 10 - Funciones
+        //Class 11 - Arrays
 
-        /*
-        functions is a enclosed block of code.
-        you can defined once and it can be executed many times.
-
-        a function can accept parameters and return a value
-
-        a javascript function is a special object type.
-
-        a function is a first class citizen  cause it can be assigned to a value
-        it can be send as an argument or a return value.
-        */
+        const a = [];
+        const b = [1, true, "hello", ['a', 'b', 'c']];
+        const c = Array.of("X", "Y", "Z", 9, 8, 7);
+        const d = Array(10).fill(false);
+        // these forms e and f are not so common currently
+        const e = new Array();
+        const f = new Array(1, 2, 'Hello', false, [a, b, c]);
+        const colors = ["red", "green", "blue"];
 
 
-        //declarated function
-        function thisIsAFunction(){
-            console.log("One");
-            console.log("Two");
-        }
+        console.log(a);
+        console.log(b);
+        console.log("length of b-array is: ", b.length)
 
-        function aFunctionWhichReturnAValue(){
-            console.log("three");
-            return false;
-            //ignored section:
-            console.log("four");
-            return "this function returns a string"
-        }
+        console.log("position 0, 1st element: ", b[0]); // 1
+        console.log("position 1, 2nd element: ", b[1]); // true
+        console.log("position 2, 3rd element: ", b[2]); // "hello"
+        console.log("position 3, 4th element: ", b[3]); // ['a', 'b', 'c']
+        console.log("position 3, 4th element-1st array-element: ", b[3][0]); // 'a'
+        console.log("position 3, 4th element-2nd array-element: ", b[3][1]); // 'b'
+        console.log("position 3, 4th element-3rd array-element: ", b[3][2]); // 'c'
 
-        function greeting(name="Unknown", age=0){
-            console.log(`Hello, my name is ${name} and I'm ${age} years old`);
-            //name= Unknown to avoid the undefined value as well as 0 for age.
-        }
+        console.log(c);
 
-        //calling a function twice:
-        thisIsAFunction();
-        thisIsAFunction();
+        console.log(d);
 
-        //calling a function which return a value:
-        let functionValue = aFunctionWhichReturnAValue();
-        console.log("function Value: ", functionValue)
+        console.log("initialized with new Array()", e);
 
-        //calling a function with parameters:
-        console.log("greeting('Virginia', 32);");
-        greeting('Virginia', 32);
-        console.log("greeting()");
-        greeting();
+        console.log(f);
 
-
-        /*Declarated Functions vs Expressed Functions */
-
-        //DECLARATED FUNCTIONS:
-        console.log("DECLARATED FUNCTIONS:")
-        declaratedFunction();
-
-        function declaratedFunction(){
-            console.log("This is a declarated function and you can calling even before it is declared");
-        }
-
-        declaratedFunction();
-
-
-        //EXPRESSED FUNCTIONS:
-        console.log("EXPRESSED FUNCTIONS:")
-        //uncomment the following expressedFunction()
-        //expressedFunction();
-        const expressedFunction = function(){
-            console.log("This is a expressed function which it is assigned to a variable");
-            console.log("If we call this expressed function before its declaration, we will get an error...");
-            console.log("** Uncaught ReferenceError: Cannot access 'expressedFunction' before initialization **");
-        }
-        expressedFunction();
+        console.log(colors);
         
+        colors.push("black");
+        console.log("color after push", colors);
+
+        colors.pop();
+        console.log("colors after pop", colors);
+
+        colors.forEach(function(el, index) {
+            console.log(`<li id="${index}">${el}</li>`);
+        });
     </script>
 </body>
 </html>
