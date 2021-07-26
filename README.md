@@ -1,4 +1,4 @@
-# Lecture010 - Functions
+# Lecture011 - Arrays
 [JavaScript-Class11](https://www.youtube.com/watch?v=o3c8cW73weQ&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=12 "JavaScript: 11. Arreglos (Arrays)")
 
 1. Arrays
