@@ -1,11 +1,11 @@
 # Lecture010 - Functions
-[JavaScript-Class10](https://www.youtube.com/watch?v=H6U1Pm7x60E&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=11)
+[JavaScript-Class11](https://www.youtube.com/watch?v=o3c8cW73weQ&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=12 "JavaScript: 11. Arreglos (Arrays)")
 
-1. functions
-     1. definition
-1. function types:
-     1. simple function
-     1. return a value
-     1. with parameters
-     1. declarated functions
-     1. expressed functions
+1. Arrays
+     1. declaration
+     2. new constructor
+     3. arrays from arrays
+1. methods:
+     1. length
+     2. push
+     3. pop
