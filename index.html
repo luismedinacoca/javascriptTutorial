@@ -13,49 +13,68 @@
 
 
     <script>
-        //Class 11 - Arrays
+        //Class 12 - Objects
+        let a = new String("Hello");
+        const b = {};
+        const c = new Object();
+        const user = {
+            name: "Jose Luis",
+            lastname: "Stratopolitus",
+            age: 25,
+            isSingle: true,
+            sex: "male",
+            contact: {
+                email: "stratopolitus.luis@example.com",
+                twitter: "@stratopolitus.luis",
+                phone: "+54 9 11 123 4567"
+            },
+            greetings: function(){
+                console.log(`Hello smile :)`)
+            },
+            introduceMySelf: function(){
+                console.log(`Hello my name is ${this.name} ${this.lastname} and I'm ${this.age} years old and you can follow me at twitter on ${this.contact.twitter}`)
+            }
+        }       
 
-        const a = [];
-        const b = [1, true, "hello", ['a', 'b', 'c']];
-        const c = Array.of("X", "Y", "Z", 9, 8, 7);
-        const d = Array(10).fill(false);
-        // these forms e and f are not so common currently
-        const e = new Array();
-        const f = new Array(1, 2, 'Hello', false, [a, b, c]);
-        const colors = ["red", "green", "blue"];
 
+        console.log(a); //[Prototype]:String
+        console.log("object b: ", b);
+        console.log("object c: ", c);
+        console.log("object user: ", user);
 
-        console.log(a);
-        console.log(b);
-        console.log("length of b-array is: ", b.length)
+        //accessing to each value:
+        console.log("object user['name']: ", user["name"]);
+        console.log("object user.name: ", user.name);
 
-        console.log("position 0, 1st element: ", b[0]); // 1
-        console.log("position 1, 2nd element: ", b[1]); // true
-        console.log("position 2, 3rd element: ", b[2]); // "hello"
-        console.log("position 3, 4th element: ", b[3]); // ['a', 'b', 'c']
-        console.log("position 3, 4th element-1st array-element: ", b[3][0]); // 'a'
-        console.log("position 3, 4th element-2nd array-element: ", b[3][1]); // 'b'
-        console.log("position 3, 4th element-3rd array-element: ", b[3][2]); // 'c'
+        /*
+          inside an object:
+          - variables are called as properties or attributes.
+          - functions are called as methods. Parenthesis are needed.
+        */
+        console.log("object user['lastname']: ", user["lastname"]);
+        console.log("object user.lastname: ", user.lastname);
 
-        console.log(c);
+        console.log("object user['lastname']: ", user["lastname"]);
+        console.log("object user.lastname: ", user.lastname);
 
-        console.log(d);
+        console.log("object user['contact[email]']: ", user["contact"]);
+        console.log("object user.contact.email: ", user.contact.email);
 
-        console.log("initialized with new Array()", e);
+        console.log("object user['greetings']: ", user["greetings"]);
+        console.log("object user.greetings: ", user.greetings);
 
-        console.log(f);
+        //using "this"
+        console.log("user.greetings();");
+        user.greetings(); //it has console.log() inside
+        console.log("user.introduceMySelf();");
+        user.introduceMySelf(); //it has console.log() inside
 
-        console.log(colors);
+        console.log(Object.keys(user)); //list each variable as a keys as an arrays
+        console.log(Object.values(user));
+
+        console.log(user.hasOwnProperty("name")); //boolean answer => true
+        console.log(user.hasOwnProperty("birth-date")); // false
         
-        colors.push("black");
-        console.log("color after push", colors);
-
-        colors.pop();
-        console.log("colors after pop", colors);
-
-        colors.forEach(function(el, index) {
-            console.log(`<li id="${index}">${el}</li>`);
-        });
     </script>
 </body>
 </html>
